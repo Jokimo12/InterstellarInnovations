@@ -29,6 +29,7 @@ params = {
     "forecast_days": 16,
     "timezone": "Europe/Rome"
 }
+'''
 
 all_data = []
 
@@ -53,8 +54,9 @@ for location in locations:
 combined_df = pd.concat(all_data, ignore_index=True)
 
 combined_df.to_json("italy_weather_data_forecast.csv", index=False)
+'''
 
-def make_weather_request(city):
+'''def make_weather_request(city):
     params = {
     "hourly": ["temperature_2m", "relative_humidity_2m", "precipitation_probability", "precipitation", "cloud_cover"],
     "forecast_days": 16,
@@ -72,7 +74,7 @@ def make_weather_request(city):
     df = df[(df["time"].dt.hour >= 6)]
 
     return df
-    
+    '''
 
        
 
