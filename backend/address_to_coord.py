@@ -1,7 +1,7 @@
 import requests
 
 def get_coordinates(address):
-    api_key = "AIzaSyA1tUy2RW0dBs3HQJz7dAC5PcE1eyHeyFw"  # Replace with your actual API key
+    api_key =   # Replace with your actual API key
     url = "https://maps.googleapis.com/maps/api/geocode/json"
     params = {
         "address": address,
